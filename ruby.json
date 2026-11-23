@@ -76,6 +76,16 @@
       ],
       "groupName": "Ruby patch versions",
       "groupSlug": "ruby"
+    },
+    {
+      "description": "json 3.x breaks OpenVox 8's Puppet::Util::Json (every rspec-puppet compile raises ArgumentError). Hold it below 3 until OpenVox 8 support has been dropped",
+      "matchDatasources": [
+        "rubygems"
+      ],
+      "matchPackageNames": [
+        "json"
+      ],
+      "allowedVersions": "<3"
     }
   ]
 }
